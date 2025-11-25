@@ -1,28 +1,28 @@
-'use client';
+"use client";
 
 import Hero from '@/components/Hero';
-import InteractivePath from '@/components/InteractivePath';
+import OfficialBannerEscalator from '@/components/OfficialBannerEscalator';
 import Synopsis from '@/components/Synopsis';
-import TrailerModal from '@/components/TrailerModal';
-import Team from '@/components/TeamUB';
-import Gallery from '@/components/Gallery';
+import TeamSection from '@/components/TeamSection';
+import PesanMoral from '@/components/PesanMoral';
+import ImpactSection from '@/components/ImpactSection';
 import Footer from '@/components/Footer';
+import TrailerModal from '@/components/TrailerModal';
 import { useState } from 'react';
 
 export default function Home() {
-  const [isTrailerOpen, setIsTrailerOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <div className="min-h-screen bg-black">
-        <Hero openTrailer={() => setIsTrailerOpen(true)} />
-        <InteractivePath />
-        <Synopsis />
-        <Team />
-        <Gallery />
-        <Footer />
-        <TrailerModal isOpen={isTrailerOpen} onClose={() => setIsTrailerOpen(false)} />
-      </div>
+      <Hero openTrailer={() => setIsOpen(true)} />
+      <OfficialBannerEscalator />
+      <Synopsis />
+      <TeamSection />
+      <PesanMoral />
+      <ImpactSection />
+      <Footer />
+      <TrailerModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </>
   );
 }
