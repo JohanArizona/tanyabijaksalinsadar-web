@@ -14,14 +14,12 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-white/10' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center font-black text-black">UB</div>
           <div>
-            <h1 className="text-xl font-bold">King Brawijaya</h1>
-            <p className="text-xs text-gray-400">LIDM 2025 • Divisi 3</p>
+            <img src="/logos/logoking.png" alt="Tanya Bijak Sadar Logo" className="h-10 w-auto" />
           </div>
         </div>
 
-        <div className="hidden md:flex items-center gap-10 text-sm font-medium">
+        <div className="hidden md:flex items-center gap-10 text-lg font-medium">
           <a href="#synopsis" className="hover:text-[#FDCC35] transition">Sinopsis</a>
           <a href="#team" className="hover:text-[#FDCC35] transition">Tim</a>
           <a href="#pesan" className="hover:text-[#FDCC35] transition">Pesan Moral</a>
