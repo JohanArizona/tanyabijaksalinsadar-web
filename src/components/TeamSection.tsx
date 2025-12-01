@@ -37,7 +37,7 @@ export default function TeamSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
               
               {/* Nama + Role */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-left translate-y-6 group-hover:translate-y-0 transition-all duration-500">
+              <div className="absolute bottom-4 left-0 right-0 p-6 text-left translate-y-6 group-hover:translate-y-0 transition-all duration-500">
                 <p className="text-2xl font-bold text-[#FDCC35]">{member.name}</p>
                 <p className="text-sm text-gray-300 uppercase tracking-wider mt-1">
                   {member.role}

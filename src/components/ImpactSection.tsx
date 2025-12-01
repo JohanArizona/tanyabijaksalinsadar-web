@@ -2,20 +2,20 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function ImpactSection() {
-  // Taruh semua foto sosialisasi kamu di public/impact/
-  // Contoh: public/impact/1.jpg, 2.jpg, dst...
+
   const photos = [
-    { src: "/impact/SMA 3.jpeg", title: "SMA Negeri 3 Malang", desc: "150 siswa kelas 12" },
-    { src: "/impact/SMK 5.jpeg", title: "SMA Negeri 3 Malang", desc: "150 siswa kelas 12" },
-    { src: "/impact/SMA 3.jpeg", title: "SMA Negeri 3 Malang", desc: "150 siswa kelas 12" },
-    { src: "/impact/Cfd.jpg", title: "Universitas Brawijaya", desc: "Sharing Session FILKOM" },
-    { src: "/impact/3.jpg", title: "Car Free Day Malang", desc: "500+ penonton & bagi stiker" },
-    { src: "/impact/4.jpg", title: "SMK Telkom Malang", desc: "Workshop 80 siswa RPL" },
-    { src: "/impact/5.jpg", title: "SMAK St. Albertus", desc: "Diskusi bersama guru BK" },
-    { src: "/impact/6.jpg", title: "CFD Rampal Malang", desc: "Sosialisasi mingguan" },
-    { src: "/impact/7.jpg", title: "SMA Negeri 1 Kepanjen", desc: "Kunjungan & pemutaran" },
-    { src: "/impact/8.jpg", title: "Universitas Ma Chung", desc: "Kolaborasi antar kampus" },
-    // Tambah sampai 12 kalau punya banyak foto!
+    { src: "/impact/Videotron Fakultas.png", title: "FILKOM UB", desc: "Penayangan di Videotron Fakultas" },
+    { src: "/impact/Videotron Kampus.png", title: "Universitas Brawijaya", desc: "Penayangan di Videotron Kampus" },
+    { src: "/impact/Mading Kampus.png", title: "FILKOM UB", desc: "Penempelan Poster di Mading Kampus"},
+    { src: "/impact/Mading Sekolah.png", title: "SMKN Negeri 5 Malang", desc: "Penempelan Poster di Mading Sekolah" },
+    { src: "/impact/CFD.png", title: "CFD Jalan Ijen, Kota Malang", desc: "Penyebaran Brosur di Car Free Day" },
+    { src: "/impact/Duduk Baca.png", title: "Taman Merbabu, Kota Malang", desc: "Promosi melalui Komunitas Literasi Duduk Baca" },
+    { src: "/impact/pkkmb.png", title: "FILKOM UB", desc: "Penayangan di Orientasi Mahasiswa Baru" },
+        { src: "/impact/Praktikum.png", title: "FILKOM UB", desc: "Sosialisasi penggunan AI dengan bijak di kelas Perkuliahan" },
+    { src: "/impact/SMA 3.jpeg", title: "SMAN Negeri 3 Malang", desc: "Sosialisasi penggunan AI dengan bijak di Sekolah" },
+    { src: "/impact/SMK 3.png", title: "SMKN Negeri 3 Malang", desc: "Sosialisasi penggunan AI dengan bijak di Sekolah" },
+    { src: "/impact/SMK 5.jpeg", title: "SMKN Negeri 5 Malang", desc: "Sosialisasi penggunan AI dengan bijak di Sekolah" },
+    { src: "/impact/Instagram Tiktok.png", title: "Instagram & Tiktok", desc: "Kampanye melalui media sosial Instagram" },
   ];
 
   return (
@@ -54,7 +54,7 @@ export default function ImpactSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
               
               {/* Teks di Bawah Foto */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-left translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+              <div className="absolute bottom-6 left-0 right-0 p-6 text-left translate-y-8 group-hover:translate-y-0 transition-all duration-500">
                 <h3 className="text-2xl font-bold text-[#FDCC35] mb-2">
                   {photo.title}
                 </h3>
@@ -72,13 +72,13 @@ export default function ImpactSection() {
           className="mt-20"
         >
           <p className="text-6xl md:text-8xl font-black text-[#FDCC35]">
-            1.500+
+            1.700+ 
           </p>
           <p className="text-2xl md:text-3xl text-gray-300 mt-4">
-            Pelajar & Mahasiswa Tersosialisasi
+            Ditonton di YouTube
           </p>
           <p className="text-lg text-gray-500 mt-6">
-            Hingga November 2025 • Malang Raya & Sekitarnya
+            Hingga November 2025
           </p>
         </motion.div>
 
